@@ -19,7 +19,7 @@ public class Quiz {
 
     public String toLine(int quizId) {
         String questionIds = String.join(",", getQuestionIds().stream().map(String::valueOf).toList());
-        String line = String.format("%1s,%2s, %3s",
+        String line = String.format("%1s,%2s, %3s, %4s",
                 quizId,
                 getTitle(),
                               questionIds);
